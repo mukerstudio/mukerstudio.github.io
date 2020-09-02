@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hi,I am clrs - Clrs,Live &amp; learn</title>
+    <title>Nginx configuration reverse proxy - Clrs,Live &amp; learn</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="clrs clrsdream,"> 
-    <meta name="description" content="I am clrs,from china,i will write some articles.Thank you."> 
+    <meta name="description" content="Reverse proxy1234567891011121314151617181920212223242526272829303132333435#PROXY-START&amp;#x2F;locatio,"> 
     <meta name="author" content="Clrs"> 
     <link rel="alternative" href="atom.xml" title="Clrs,Live &amp; learn" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -57,7 +57,7 @@
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://www.clrs.me">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">Hi,I am clrs</h3>
+        <h3 class="subtitle">Nginx configuration reverse proxy</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -82,30 +82,30 @@
             animation-duration: 1.2s;
             background-image: 
                 radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
-                url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_660582997_412145.jpg) ">
+                url(https://vanseodesign.com/blog/wp-content/uploads/2018/01/nginx-logo.png) ">
         </div>
         <div class="else">
             <p class="animated fadeInDown">
                 
-                <a href="/categories/Me"><b>「
-                    </b>ME<b> 」</b></a>
+                <a href="/categories/Server"><b>「
+                    </b>SERVER<b> 」</b></a>
                 
-                August 22, 2020
+                September 02, 2020
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2020/08/22/001/" title="Hi,I am clrs" class="">Hi,I am clrs</a>
+            <h3 class="post-title animated fadeInDown"><a href="/2020/09/02/Nginx%20configuration%20reverse%20proxy/" title="Nginx configuration reverse proxy" class="">Nginx configuration reverse proxy</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    289
+                    7.8k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                    1 mins.
+                    7 mins.
                 </span>
                 
                 
@@ -118,7 +118,7 @@
             </p>
             
             
-            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Me/" rel="tag">Me</a></li></ul>
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Nginx/" rel="tag">Nginx</a></li><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Proxy/" rel="tag">Proxy</a></li></ul>
             
         </div>
     </div>
@@ -129,7 +129,7 @@
         <div class="screen-gradient-content-inside">
             <div class="bold-underline-links screen-gradient-sponsor">
                 <p>
-                    <span class="animated fadeIn delay-1s">A Chinese code farmer</span>
+                    <span class="animated fadeIn delay-1s">Nginx</span>
                 </p>
             </div>
         </div>
@@ -139,7 +139,9 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <h2 id="I-am-clrs-from-china-i-will-write-some-articles-Thank-you"><a href="#I-am-clrs-from-china-i-will-write-some-articles-Thank-you" class="headerlink" title="I am clrs,from china,i will write some articles.Thank you."></a>I am clrs,from china,i will write some articles.Thank you.</h2>
+            <h2 id="Reverse-proxy"><a href="#Reverse-proxy" class="headerlink" title="Reverse proxy"></a>Reverse proxy</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">#PROXY-START&#x2F;</span><br><span class="line">location  ~* \.(php|jsp|cgi|asp|aspx)$</span><br><span class="line">&#123;</span><br><span class="line">    proxy_pass https:&#x2F;&#x2F;clrs.me;</span><br><span class="line">    proxy_set_header Host clrs.me;</span><br><span class="line">    proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">    proxy_set_header REMOTE-HOST $remote_addr;</span><br><span class="line">    proxy_ssl_name clrs.me;</span><br><span class="line">	proxy_ssl_server_name on;</span><br><span class="line">    proxy_connect_timeout 300s;</span><br><span class="line">	proxy_send_timeout 300s;</span><br><span class="line">	proxy_read_timeout 300s;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">location &#x2F;</span><br><span class="line">&#123;</span><br><span class="line">    proxy_pass https:&#x2F;&#x2F;clrs.me;</span><br><span class="line">    proxy_set_header Host clrs.me;</span><br><span class="line">    proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">    proxy_set_header REMOTE-HOST $remote_addr;</span><br><span class="line">     proxy_ssl_name clrs.me;</span><br><span class="line">	proxy_ssl_server_name on;</span><br><span class="line">    add_header X-Cache $upstream_cache_status;</span><br><span class="line">    proxy_connect_timeout 300s;</span><br><span class="line">	proxy_send_timeout 300s;</span><br><span class="line">	proxy_read_timeout 300s;</span><br><span class="line">    #Set Nginx Cache</span><br><span class="line">    </span><br><span class="line">    	add_header Cache-Control no-cache;</span><br><span class="line">    expires 12h;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#PROXY-END&#x2F;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Reverse-proxy-restricted-path"><a href="#Reverse-proxy-restricted-path" class="headerlink" title="Reverse proxy restricted path"></a>Reverse proxy restricted path</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">#PROXY-START&#x2F;</span><br><span class="line">location  ~* \.(php|jsp|cgi|asp|aspx)$</span><br><span class="line">&#123;</span><br><span class="line">    proxy_pass https:&#x2F;&#x2F;clrs.me;</span><br><span class="line">    proxy_set_header Host clrs.me;</span><br><span class="line">    proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">    proxy_set_header REMOTE-HOST $remote_addr;</span><br><span class="line">    proxy_ssl_name clrs.me;</span><br><span class="line">	proxy_ssl_server_name on;</span><br><span class="line">&#125;</span><br><span class="line">#according to routing config</span><br><span class="line">location &#x2F;3rd&#x2F;pay</span><br><span class="line">&#123;</span><br><span class="line">    proxy_pass https:&#x2F;&#x2F;clrs.me;</span><br><span class="line">    proxy_set_header Host clrs.me;</span><br><span class="line">    proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">    proxy_set_header REMOTE-HOST $remote_addr;</span><br><span class="line">    proxy_ssl_name clrs.me;</span><br><span class="line">	proxy_ssl_server_name on;</span><br><span class="line">    add_header X-Cache $upstream_cache_status;</span><br><span class="line">    </span><br><span class="line">    #Set Nginx Cache</span><br><span class="line">    </span><br><span class="line">    add_header Cache-Control no-cache;</span><br><span class="line">    expires 12h;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#Match multiple routes</span><br><span class="line">location ~* &#x2F;3rd&#x2F;(checkouttime|saver|up).html</span><br><span class="line">&#123;</span><br><span class="line">    proxy_pass https:&#x2F;&#x2F;clrs.me;</span><br><span class="line">    proxy_set_header Host clrs.me;</span><br><span class="line">    proxy_set_header X-Real-IP $remote_addr;</span><br><span class="line">    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span><br><span class="line">    proxy_set_header REMOTE-HOST $remote_addr;</span><br><span class="line">    proxy_ssl_name clrs.me;</span><br><span class="line">	proxy_ssl_server_name on;</span><br><span class="line">    add_header X-Cache $upstream_cache_status;</span><br><span class="line">    </span><br><span class="line">    #Set Nginx Cache</span><br><span class="line">    </span><br><span class="line">    add_header Cache-Control no-cache;</span><br><span class="line">    expires 12h;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
                 data-autoplay="true">
@@ -197,7 +199,7 @@
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>Contents</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#I-am-clrs-from-china-i-will-write-some-articles-Thank-you"><span class="toc-number">1.</span> <span class="toc-text">I am clrs,from china,i will write some articles.Thank you.</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Reverse-proxy"><span class="toc-number">1.</span> <span class="toc-text">Reverse proxy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reverse-proxy-restricted-path"><span class="toc-number">2.</span> <span class="toc-text">Reverse proxy restricted path</span></a></li></ol>
                 </div>
             </div>
             
