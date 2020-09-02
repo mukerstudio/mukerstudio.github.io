@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>php using regx replace url host</title>
+      <link href="/2020/09/02/004/"/>
+      <url>/2020/09/02/004/</url>
+      
+        <content type="html"><![CDATA[<h2 id="use-regx-replace-‘https-www-clrs-me-abc-index-39-to-‘https-www-muker-club-abc-index-39"><a href="#use-regx-replace-‘https-www-clrs-me-abc-index-39-to-‘https-www-muker-club-abc-index-39" class="headerlink" title="use regx replace ‘https://www.clrs.me/abc/index&#39; to ‘https://www.muker.club/abc/index&#39;"></a>use regx replace ‘<a href="https://www.clrs.me/abc/index&#39;">https://www.clrs.me/abc/index&#39;</a> to ‘<a href="https://www.muker.club/abc/index&#39;">https://www.muker.club/abc/index&#39;</a></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">$a &#x3D; preg_replace(&#39;&#x2F;(https):\&#x2F;\&#x2F;([^\&#x2F;]+)&#x2F;i&#39;, &#39;https:&#x2F;&#x2F;www.muker.club&#39;,&#39;https:&#x2F;&#x2F;www.clrs.me&#x2F;abc&#x2F;index&#39;);</span><br><span class="line"></span><br><span class="line">echo $a;</span><br></pre></td></tr></table></figure><h3 id="result-is-https-www-muker-club-abc-index"><a href="#result-is-https-www-muker-club-abc-index" class="headerlink" title="result is https://www.muker.club/abc/index"></a>result is <a href="https://www.muker.club/abc/index">https://www.muker.club/abc/index</a></h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Backend </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PHP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Nginx configuration reverse proxy</title>
       <link href="/2020/09/02/002/"/>
       <url>/2020/09/02/002/</url>
