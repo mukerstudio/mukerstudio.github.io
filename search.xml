@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Nginx configuration prohibits access to php scripts in the path</title>
+      <link href="/2020/09/02/005/"/>
+      <url>/2020/09/02/005/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Nginx-configuration-prohibits-access-to-php-scripts-in-the-path"><a href="#Nginx-configuration-prohibits-access-to-php-scripts-in-the-path" class="headerlink" title="Nginx configuration prohibits access to php scripts in the path"></a>Nginx configuration prohibits access to php scripts in the path</h2><h3 id="Multiple-path"><a href="#Multiple-path" class="headerlink" title="Multiple path"></a>Multiple path</h3><h3 id="Multiple-suffixes"><a href="#Multiple-suffixes" class="headerlink" title="Multiple suffixes"></a>Multiple suffixes</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">   #匹配多个上传目录</span><br><span class="line">location ~ ^&#x2F;(uploads|static|data|dist|docs|layer_mobile|layui|sldate|swagger)</span><br><span class="line">&#123;</span><br><span class="line">        # 匹配文件最名包含两个.以上的文件</span><br><span class="line">        location ~ &quot;([.]&#123;2,&#125;)$&quot;</span><br><span class="line">        &#123;</span><br><span class="line">                deny all;</span><br><span class="line">        &#125;</span><br><span class="line">        # 配置php和php5后缀</span><br><span class="line">        location ~ &quot;.(php|php5)$&quot;</span><br><span class="line">        &#123;</span><br><span class="line">                deny all;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Server </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nginx </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>php using regx to replace domain</title>
       <link href="/2020/09/02/004/"/>
       <url>/2020/09/02/004/</url>
